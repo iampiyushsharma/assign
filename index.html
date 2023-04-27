@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Management</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Contact Management</h1>
+  
+  <div id="form-container">
+    <h2>Add Contact</h2>
+    <form id="contact-form">
+      <div class="input-row">
+        <label for="first-name">Name:</label>
+        <input type="text" id="first-name" placeholder="First" required>
+        <label for="last-name"></label>
+        <input type="text" id="last-name" placeholder="Last" required>
+      </div>
+
+      <div class="input-row">
+        
+      </div>
+
+      <div class="input-row">
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" placeholder="Number" required>
+      </div>
+
+      <button type="submit" id="submit-btn">Save</button>
+    </form>
+  </div>
+  
+  <div id="search-container">
+    <h2>Search Contacts</h2>
+    <input type="text" id="search-bar" placeholder="Search by Name">
+  </div>
+  
+  <table id="contacts-table">
+    <thead>
+      <tr>
+        <th>SN</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="contacts-body">
+    </tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
